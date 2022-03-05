@@ -16,37 +16,64 @@
 </head>
 <body>
 
-  Our Pricing
-  Annually
-  Monthly
+  <main>
+    <div class="back-ground">
+      <div class="top-bg"></div>
+      <div class="bot-bg"></div>
 
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
+      <section class="price-comp" aria-labelledby="price-header">
+        <h2 class="price-header">Our Pricing</h2>
 
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
+        <div class="toggle-button">
+          <p class="toggle-left annaully">Annaully</p>
+          <label for="">
+            <input id="" type="checkbox"> 
+            <span class="slider round"></span>
+          </label>
+          <p class="toggle-right monthl">Monthly</p>
+        </div>
 
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-  
-  <div class="attribution">
+        <div class="prices">
+
+          <div class="basic-price-card card">
+            <h3 class="basic-price-header card__header">Basic</h3>
+            <!-- 19.99 -->
+            <p class="basic-price card__price">$199.99</p>
+            <p class="basic-storage basic__storage">500 GB Storage</p>
+            <p class="basic-user card__users">2 Users Allowed</p>
+            <p class="basic-file-send card__file-send">Send up to 3 GB</p>
+            <label for="learn-more"></label>
+              <button class="learn-more" type="button">Learn More</button>
+          </div>
+
+          <div class="profess-price card">
+            <h3 class="profess-price-header card__header">Professional</h3>
+            <!-- $24.99 -->
+            <p class="profess-price card__price">$249.99</p>
+            <p class="profess-storage profess__storage">1 TB Storage</p>
+            <p class="profess-user card__users">5 Users Allowed</p>
+            <p class="profess-file-send card__file-send">Send up to 10 GB</p>
+            <label for="learn-more"></label>
+            <button class="learn-more prof-lm" type="button">Learn More</button>
+          </div>
+
+          <div class="master-price card">
+            <h3 class="master-price-header card__header">Master</h3>
+            <!-- $39.99 -->
+            <p class="master-price card__price">$399.99</p>
+            <p class="master-storage card__storage">2 TB Storage</p>
+            <p class="master-users card__users">10 User Allowed</p>
+            <p class="master-file-send card__file-send">Send up to 20 GB</p>
+            <label for="learn-more"></label>
+            <button class="learn-more" type="button">Learn More</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </footer>
 </body>
 </html>
