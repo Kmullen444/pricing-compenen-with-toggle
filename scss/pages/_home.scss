@@ -1,1 +1,16 @@
+@use '../base';
 @use '../utils' as var;
+
+.back-ground{
+  background-image: url('../images/bg-top.svg');
+  background-position: top right;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.price-header {
+  text-align: center;
+  color: var.$gray-600;
+  padding-top: 5rem;
+}

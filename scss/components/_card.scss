@@ -1,0 +1,51 @@
+@use '../utils' as var;
+
+.card {
+  max-width: 80%;
+  border: 1px solid black;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  border-radius: .5em;
+  background: white;
+
+  @include var.flex-col;
+}
+
+.card__header {
+  padding-top: 1.5rem;
+  color: var.$gray-400;
+}
+
+.card__price {
+  padding: 2rem 0;
+  border-bottom: 1px solid var.$gray-200;
+  width: 80%;
+  text-align: center;
+  color: var.$gray-600;
+}
+
+.card__desc {
+  border-bottom: 1px solid var.$gray-200;
+  width: 80%;
+  text-align: center;
+  padding: 1.2rem 0;
+  color: var.$gray-400;
+}
+
+.dollar-sign {
+  position: relative;
+  top: -.5rem;
+  left: -.5rem;
+  color: var.$gray-600;
+}
+
+.profess-price-card {
+  background-image: var.$prim-grad;
+  h3, p, .dollar-sign{
+    color: white;
+  }
+  .btn {
+    background: white;
+    color: hsl(237, 63%, 64%);
+  }
+}
