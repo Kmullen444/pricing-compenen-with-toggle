@@ -3,10 +3,16 @@
 
 .back-ground{
   background-image: url('../images/bg-top.svg');
-  background-position: top right;
-  background-size: 100%;
+  background-position: 550%  0%;
   background-repeat: no-repeat;
-  width: 100%;
+  background-size: 90%;
+  background-color: #f7f7ff;
+
+  @include var.desktop {
+    background-image: url('../images/bg-top.svg'), url('../images/bg-bottom.svg');
+    background-size: 25%, 25%;
+    background-position: top right, 10% 120%;
+  }
 }
 
 .price-header {

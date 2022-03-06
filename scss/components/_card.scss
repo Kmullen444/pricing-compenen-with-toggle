@@ -1,35 +1,38 @@
 @use '../utils' as var;
 
 .card {
+  @include var.flex-col;
   max-width: 80%;
-  border: 1px solid black;
   margin: 0 auto;
   margin-bottom: 2em;
   border-radius: .5em;
   background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-  @include var.flex-col;
-}
+  @include var.desktop {
+    width: 85%;
+  }
 
-.card__header {
-  padding-top: 1.5rem;
-  color: var.$gray-400;
-}
+  &__header {
+    padding-top: 1.5rem;
+    color: var.$gray-400;
+  }
 
-.card__price {
-  padding: 2rem 0;
-  border-bottom: 1px solid var.$gray-200;
-  width: 80%;
-  text-align: center;
-  color: var.$gray-600;
-}
+  &__price {
+    padding: 2rem 0;
+    border-bottom: 1px solid var.$gray-200;
+    width: 80%;
+    text-align: center;
+    color: var.$gray-600;
+  }
 
-.card__desc {
-  border-bottom: 1px solid var.$gray-200;
-  width: 80%;
-  text-align: center;
-  padding: 1.2rem 0;
-  color: var.$gray-400;
+  &__desc {
+    border-bottom: 1px solid var.$gray-200;
+    width: 80%;
+    text-align: center;
+    padding: 1.2rem 0;
+    color: var.$gray-400;
+  }
 }
 
 .dollar-sign {
@@ -47,5 +50,17 @@
   .btn {
     background: white;
     color: hsl(237, 63%, 64%);
+
+    &:hover {
+      background-image: var.$prim-grad;
+      color: white;
+      border: 1px solid white;
+    }
+  }
+
+  @include var.desktop {
+    height: 100%;
+    bottom: 1rem;
+    position: relative;
   }
 }

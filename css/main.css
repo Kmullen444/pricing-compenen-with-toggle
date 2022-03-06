@@ -1,5 +1,16 @@
 /* Monterrat */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+/* font */
+/* color */
+@media (min-width: 559px) {
+  .prices {
+    display: flex;
+    margin: 0 auto;
+    max-width: 75%;
+    height: 60vh;
+  }
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -68,14 +79,19 @@ body {
   font-size: 0.8rem;
 }
 
-/* font */
-/* color */
 .back-ground {
   background-image: url("../images/bg-top.svg");
-  background-position: top right;
-  background-size: 100%;
+  background-position: 550% 0%;
   background-repeat: no-repeat;
-  width: 100%;
+  background-size: 90%;
+  background-color: #f7f7ff;
+}
+@media (min-width: 559px) {
+  .back-ground {
+    background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+    background-size: 25%, 25%;
+    background-position: top right, 10% 120%;
+  }
 }
 
 .price-header {
@@ -156,23 +172,26 @@ input:checked + .slider:before {
 }
 
 .card {
-  max-width: 80%;
-  border: 1px solid black;
-  margin: 0 auto;
-  margin-bottom: 2em;
-  border-radius: 0.5em;
-  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  border-radius: 0.5em;
+  background: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+@media (min-width: 559px) {
+  .card {
+    width: 85%;
+  }
+}
 .card__header {
   padding-top: 1.5rem;
   color: #6d708d;
 }
-
 .card__price {
   padding: 2rem 0;
   border-bottom: 1px solid #b3b5c6;
@@ -180,7 +199,6 @@ input:checked + .slider:before {
   text-align: center;
   color: #494c5f;
 }
-
 .card__desc {
   border-bottom: 1px solid #b3b5c6;
   width: 80%;
@@ -206,15 +224,31 @@ input:checked + .slider:before {
   background: white;
   color: #696fdd;
 }
+.profess-price-card .btn:hover {
+  background-image: linear-gradient(160deg, #a3a8f0, #696fdd);
+  color: white;
+  border: 1px solid white;
+}
+@media (min-width: 559px) {
+  .profess-price-card {
+    height: 100%;
+    bottom: 1rem;
+    position: relative;
+  }
+}
 
 .btn {
   padding: 0.7rem 4.5rem;
   margin: 1.5rem 0;
   background-image: linear-gradient(160deg, #a3a8f0, #696fdd);
-  border: none;
+  border: 1px solid #696fdd;
   border-radius: 4px;
   color: white;
   cursor: pointer;
+}
+.btn:hover {
+  background: white;
+  color: #696fdd;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,13 @@
+@use '../utils' as *;
+
+
+.prices {
+  @include desktop {
+    display: flex;
+    margin: 0 auto;
+    max-width: 75%;
+    height: 60vh;
+  }
+}
+
+
